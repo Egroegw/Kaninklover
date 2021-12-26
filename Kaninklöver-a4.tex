@@ -1,0 +1,739 @@
+\documentclass[a4paper, twoside, 11pt]{article}
+% \documentclass[twoside, 11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[inner=0.6in, outer=0.6in, top=0in, bottom=1.0in]{geometry}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{threeparttable}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{etoolbox}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx}
+% \usepackage{ulem}
+\usepackage[sfdefault]{atkinson}
+
+% \newgeometry{inner=0.4in, outer=0.4in, top=1.2in, bottom=1.0in}
+\newgeometry{inner=0.6in, outer=0.6in, top=1.2in, bottom=1.0in}
+\overfullrule=0pt
+\setlist[itemize]{parsep=3pt}
+\setlist[enumerate]{parsep=3pt}
+
+
+% \titleformat{\subsection}{\bfseries\itshape\large}{\thesection.}{}{}
+\linespread{1.0}
+\setlength{\parindent}{0pt}
+\setlength\columnsep{15pt}
+
+\makeatletter
+\patchcmd{\@maketitle}{\LARGE}{\Huge}{\typeout{OK 1}}{\typeout{Failed 1}}
+\patchcmd{\@maketitle}{\large \lineskip}{\Large \lineskip}{\typeout{OK 2}}{\typeout{Failed 3}}
+\patchcmd{\maketitle}{\@fnsymbol}{\@arabic}{}{}
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{Wang (2021), \textit{Kaninklöver/Cottontail Club: A Cheatsheet}}
+\fancyhead[RE,LO]{Larsson and Uus}
+% \fancyfoot[CE,CO]{\leftmark}
+\fancyfoot[C]{\thepage\ of \pageref{LastPage}}
+% \fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\setlength{\skip\footins}{0.8cm}
+
+
+
+% \renewcommand{\baselinestretch}{1.0}
+% \usepackage[portrait, margin=0.6in]{geometry}
+% \addtolength{\topmargin}{-.6in}
+% \usepackage[colors=2]{onedown}
+% \renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+
+\title{Kaninklöver / Cottontail Club\\A Cheatsheet (2021)}
+
+\author{
+Jan Eric Larsson\footnote{\normalsize{\texttt{ jan@goalart.com}}} \hphantom aand Anu Uus \\
+Revision by George Wang\footnote{\normalsize{\texttt{ egroegw@tutanota.com.} \\
+This document  in LaTeX and PDF form is available at \texttt{https://github.com/Egroegw/Kaninklover}}}
+}
+\date{}
+
+\begin{document}
+% \sffamily
+\maketitle
+
+\vspace{0cm}
+% \hline
+\begin{multicols}{3}
+
+\itshape
+
+Kaninklöver is a system developed by Larsson and Uus and descended from Larsson's earlier Tangerine/Cranberry Club.
+
+While summarising, I consulted
+\begin{itemize}
+    \item \emph{The Tangerine Club,} pp. 2--20, Larsson 1995
+    \item \emph{Kaninklöver,} pp. 3--38, Larsson 2015, and
+    \item \emph{Kaninklöver Sammanfattning,} Larsson and Uus 2020
+\end{itemize}
+
+For more notes, see the last page.
+
+\upshape
+\section{Opening Bids}
+In order of attractiveness,
+\begin{enumerate}
+    \item Open 1NT or 2NT if you can
+    \item Open 1$\clubsuit$ if you can
+    \item Open your \textit{longest suit}.
+    In a tie, open the higher-ranking suit unless 44 in the majors
+
+     \textbf{Exception:} With exactly 3334 shape, open 1$\diamondsuit$
+    \item Preempt if you can/dare!
+    \item Pass
+\end{enumerate}
+
+
+
+\section{1$\clubsuit$ opening}
+
+15+ points, any distribution.
+
+
+\subsection*{Negative response}
+
+Responder's 1$\diamondsuit$ shows any 0--8 HCP.
+
+\begin{center}
+\begin{tabular}{ |c|l| }
+ \hline
+ \multicolumn{2}{|c|}{\textit{Opener's 2nd bid}} \\
+ \hline
+ 1$\heartsuit\spadesuit$ & 15--20, 4+ cards\\
+ 1NT& balanced minimum \\
+ 2$\clubsuit\diamondsuit$ & 15--20, 5+ cards\\
+ other& 21+, \textit{särskild Stödfrag}\\
+ 2NT& 23--24, balanced\\
+
+ \hline
+\end{tabular}
+\end{center}
+
+With 0--4 HCP, Responder passes.
+
+Opener bids suits naturally; responder bids minors natually but bids [$\heartsuit, \spadesuit$, NT] to show [$\spadesuit$, NT, $\heartsuit$] respectively.
+
+If "balanced minimum" for opener is 15--17, she shows a balanced 18--20 by bidding her longest suit (1$\heartsuit\spadesuit$, 2$\clubsuit\diamondsuit$), intending to rebid NT.\\
+
+
+
+% \begin{tabular}{ |c|c|l|  }
+
+%  \hline
+%  \multicolumn{3}{|c|}{\textit{Opener's 2nd bid}} \\
+%  \hline
+%  1$\heartsuit\spadesuit$ & 15--20& 5-card suit\\
+%  1NT& 18--19& balanced, no 5cM\\
+%  2$\clubsuit\diamondsuit$ & 15--20& 5-card suit\\
+%  2$\heartsuit\spadesuit$ & 21+& \textit{särskild Stödfrag}\\
+%  3$\clubsuit\diamondsuit$ & 21+& \\
+%  \hline
+% \end{tabular}
+
+\subsection*{Positive response: 1$\clubsuit$ -- other}
+
+\begin{center}
+\begin{tabular}{ |c|l| }
+ \hline
+ \multicolumn{2}{|c|}{\textit{Responder's 1st bid}} \\
+ \hline
+ 1$\heartsuit$ & 10+, 5+ spades\\
+ 1$\spadesuit$ & 10+,  balanced\\
+ 1NT& 10+, 5+ hearts\\
+ 2$\clubsuit$ & 10+, 5+ diamonds\\
+ 2$\diamondsuit$ & 10+, 5+ clubs\\
+ \hline
+\end{tabular}
+\end{center}
+ Positive responses force to game. Opener can...
+ \begin{itemize}
+     \item \textbf{begin a relay} to find controls
+     \item \textbf{bid a new suit} to ask a \textit{support question}
+     \item \textbf{bid responder's suit} to ask for \textit{trump quality}
+     \item \textbf{jump} to show a solid suit and ask for controls.
+ \end{itemize}
+
+ \subsection*{Asking bids}
+
+ \subsection*{Dealing with interference}
+ Opponents always interfere over a strong club. Always.
+
+ \subsubsection*{Opponents overcall}
+Passing shows 0--8 points.
+
+Double shows 9+ and means that responder would have bid what the opponents just overcalled ("stolen bid").
+
+Other responses are transfers.
+
+If opponents overcall 1$\diamondsuit$, passing shows 0--5, doubling shows 6--8, and higher bids are unchanged.
+
+\subsubsection*{Opponents double}
+Pass shows 0--7, redoubling shows 8--9, 1$\diamondsuit$ shows 10+ and 5+ clubs, while higher bids are unchanged.
+
+\subsubsection*{Responder is weak}
+If responder shows weakness, opener can double for takeout, bid 1NT with a balanced 18--20, bid a new suit naturally with 15--20, or show 21+ and ask for support with a jump shift.
+
+\subsubsection*{Responder is strong (10+)}
+If advancer passes, opener can double for takeout, bid 1NT with a balanced 18--20, bid a new suit naturally with 15--20, or show 21+ and ask for support with a jump shift.
+
+
+
+
+
+
+ \subsection*{1$\clubsuit$ in 3rd/4th seat}
+
+
+
+
+
+\section{1$\diamondsuit\heartsuit\spadesuit$ opening}
+
+
+\emph{\textbf{1st/2nd:} 10--14 HCP, 4+ cards \\ \textbf{3rd seat:} 8--14 HCP, 4+ cards \\ \textbf{4th seat:} 12--14 HCP, 4+ cards \\ \\
+1$\diamondsuit$ may also show exactly 3334 shape.}
+
+\subsection*{Responder's first bids}
+
+Without interference, responder can bid a general response:
+\begin{itemize}
+    \item 1-over-1 to show 10--14 and 4+ cards
+    \item 2-over-1 to show 13--14 and 4+ cards \textit{except 2$\heartsuit$ over 1$\spadesuit$ shows 5+ hearts}
+    \item Negative 1NT to show 10--12 and a balanced hand or 7--10 and 3 care support for opener
+\end{itemize}
+
+In addition, responder has the following special responses available.
+
+\subsubsection*{Blocking raises}
+
+With 4-card support and 0--6 pts, raise to the two-level.
+
+With 4-card support and 7--10 pts, double raise to the three-level.
+
+If slam is unlikely, raise 1$\heartsuit\spadesuit$ to game.
+
+\subsubsection*{Jump shifts}
+Jumps in a new suit show weak hands with disinterest in the opening suit.
+
+\subsubsection*{Key raise (Tangenthöjning)}
+Bidding the suit under the opening bid at the two-level shows:
+\begin{itemize}
+    \item 4+ card support for opener and 10--12, or
+    \item a natural suit and 13+ points
+\end{itemize}
+
+With a minimum, opener bids two of his original suit. Responder passes if he has trump support, or bids again if he had a two-over-one.
+
+Otherwise opener invites game by bidding anything else.
+
+\subsubsection*{Invitational 2NT}
+2NT shows 5-card support and 13--17 points. Responder has a strong invitation, but is not interested in slam.
+
+Opener bids three of his suit with a minimum.
+
+\subsubsection*{3NT (pass or correct)}
+15--17 points, no four-card major, no five-card minor, and exactly 3-card support.
+
+\subsection*{Relays and weak takeouts}
+
+Responder can begin a strong relay when holding 15+ points.
+
+Responder can make a weak takeout of opener's suit with 443+ in the other suits and 0--9 points.
+% 1$\heartsuit$ in response to 1$\diamondsuit$, or 1$\spadesuit$ to 1$\heartsuit$ is:
+
+ 1$\diamondsuit$--1$\heartsuit$ or 1$\heartsuit$--1$\spadesuit$ is:
+\begin{itemize}
+\item a natural 1-over-1, or
+    \item a strong relay, or
+        \item a weak takeout.
+\end{itemize}
+
+% $2\clubsuit$ in response to 1$\spadesuit$ is:
+1$\spadesuit$--2$\clubsuit$ is:
+\begin{itemize}
+\item a natural 2-over-1, or
+    \item a strong relay
+
+\end{itemize}
+
+% 1NT after opener's 1$\spadesuit$ is:
+1$\spadesuit$--1NT is:
+\begin{itemize}
+\item a negative 1NT, or
+
+        \item a weak takeout.
+\end{itemize}
+
+After any of these sequences, opener must bid again (except when balanced and minimum after 1$\spadesuit$--1NT) at the lowest level.
+
+He
+\begin{itemize}
+    \item raises responder with
+four-card support
+\item bids NT if balanced,
+\item bids a new
+suit with 45, and
+\item re-bids the opening suit
+with 6 cards.
+\end{itemize}
+
+Responder's second action depends on what he has.
+
+\subsubsection*{Responder began a strong relay}
+If responder has 15+ he bids the next step (skipping 2 of opener's first suit), asking for top controls,
+followed by question bidding.
+
+Opener's third bid shows
+number of peak controls and then the responder can
+make support questions and trump questions in the same way
+as in the questioning after 1c.
+
+Sometimes the opening hand responds to the other
+relay message at level 3h or higher, and then the
+the support or drum call of the response hand is made at the four-position
+and cannot be distinguished from a final bid.
+If the opener's response to
+peak control question is 3h or higher.
+This can
+be solved with a stop relay.
+If the responder bids relay
+(except 3N), the opener must also bid relay,
+and after this the responder bids the final bid.
+
+Also
+a direct 3N from the responder is a final bid. If
+the responder does not bid 3N or relay but a suit
+this is a support or trump question.
+
+\subsubsection*{Responder made a weak takeout}
+If responder made a weak takeout of opener's suit, responder must not make a second bid.
+
+Sometimes you have a choice between a weak relay and
+raising with three-card support. Then
+consider whether the opener might have a better
+five-card suit on the side, when a weak
+relay is often better than raising.
+
+\subsubsection*{Responder made a natural 1-/2-over-1 or negative 1NT}
+If responder's first bid was natural, he bids anything else. Bidding continues as if you had never heard of relays and takeouts.
+
+
+\subsection*{Opener's second bid}
+Assuming that responder made a general response (and not a special response):
+\begin{itemize}
+    \item Bids at lowest level show 10--12
+    \item Jumps/reverses show 13--14
+    \item NT shows a balanced hand
+\end{itemize}
+
+Rebidding the opening bid normally shows 6+ cards, bidding a new suit shows 54 shape.
+
+Opener can raise responder's suit with 3+ card support.
+
+With 5332, opener usually has to choose between bidding NT and rebidding the opening suit. At the 1-level, usually prefer NT, and at the 2-level, usually prefer rebidding.
+
+Even with a maximum, opener should invite game after a 1-over-1 or negative 1NT, never blast it.
+
+\subsection*{Responder's second bid}
+
+\subsubsection*{4th suit forcing}
+Shows invitational strength and asks for \begin{itemize}
+    \item extra length in the suits bid so far
+    \item 3+ card support for responder
+    \item a stopper in the 4th suit
+\end{itemize}
+
+A jump in the 4th suit shows invitational strength and 55+ shape.
+
+\subsubsection*{Weak jumping removal}
+The jump of the response hand in the new suit shows a weak
+hand of 0-9 points and at least six suits, and
+a maximum of one card in the opening suit.
+
+
+\subsubsection*{Higher response bids}
+The higher response bids of the response hand are all weak and
+based on a long suit. The opener has
+normally only have to pass or possibly raise
+the latch with good alignment.
+
+\subsection*{Interference over 1$\diamondsuit\heartsuit\spadesuit$}
+Opponents will often compete over 1$\diamondsuit\heartsuit\spadesuit$ by doubling or overcalling.
+
+\subsubsection*{Opponents double (takeout)}
+
+\begin{center}
+\begin{tabular}{ |c|l| }
+ \hline
+ \multicolumn{2}{|c|}{\textit{Responses after 1x (X)}} \\
+ \hline
+ pass & balanced\\
+ 2/3/4\textit{x} &  blocking\\
+ 2NT & 13+, support showing\\
+ suit & 10--14, natural, NF\\
+ XX & 15+, strong relay\\
+ \hline
+\end{tabular}
+\end{center}
+
+With a strong balanced hand responder can pass and hope to later double for penalty.
+
+\subsubsection*{Opponents overcall}
+
+\begin{center}
+\begin{tabular}{ |c|l| }
+ \hline
+ \multicolumn{2}{|c|}{\textit{Responses after 1x (1y)}} \\
+ \hline
+ X & 10--14, 44+ in unbid\\
+  & 15+, 5+ in some suit\\
+ raise &  blocking\\
+ new suit & 10--14, 5+ cards\\
+ 1NT & 10--12, bal with stop \\
+ 2NT & 13+, 5+ card support\\
+ 3NT & 15--17, bal with stop \\
+ cuebid & 13+, 4 card support \\
+     & 15+, bal \textit{without} stop\\
+ \hline
+\end{tabular}
+\end{center}
+
+Jumps in a new suit show support for opener and a natural suit.
+
+Doubling and then bidding a suit shows a stronger hand than bidding a suit directly.
+
+
+\subsection*{Cuebids}
+If we have bid a suit, a cuebid usually shows support and an invitational+ hand.
+
+If we have bid several suits, the cuebid invites 3N, asking for a stopper.
+
+Immediately after an opponent's 1-of-a-suit opening, a cuebid shows 10+ and 55 in the two highest unbid suits.
+
+Additionally, you can always cuebid to show a strong hand and ask your partner to describe his hand further.
+
+Double followed by a cuebid is used to
+show a natural suit, if the opposing opening could be short.
+
+Repeated cuebidding is also natural.
+
+\section{1NT opening}
+
+\normalfont
+Use your favorite system. I'm serious: almost any system not masochistic works well after 1NT.
+
+Personally, I use 12--14 HCP (no 5-card Major) in 1st/2nd seat and 15--17 HCP in 3rd/4th, but you can stick to one range throughout or use your own notrump ranges.
+
+
+% (That said, I'd recommend using 2NT/3$\clubsuit$ as transfers to 3$\clubsuit$/3$\diamondsuit$. I'm still unhappy with 2$\spadesuit$ and 3$\diamondsuit\heartsuit\spadesuit$.)
+
+\section{2$\clubsuit$ opening}
+
+
+\emph{\textbf{1st/2nd:} 10--14 HCP, 5+ clubs \\
+\textbf{3rd seat:} 8--14 HCP, 5+ clubs \\
+\textbf{4th seat:} 12--14 HCP, 5+ clubs}
+
+\begin{center}
+\begin{tabular}{ |c|l| }
+ \hline
+ \multicolumn{2}{|c|}{\textit{Responses to 2$\clubsuit$}} \\
+ \hline
+ 2$\diamondsuit$ & 13+, relay\\
+ 2$\heartsuit\spadesuit$ & 10--12, 5+ cards\\
+ 2NT &  13--14, balanced\\
+3/4$\clubsuit$ & blocking\\
+ 3$\diamondsuit\heartsuit\spadesuit$ & 13--14, 5+ cards \\
+ 3NT & 15--17, sign-off \\
+ \hline
+\end{tabular}
+\end{center}
+
+Responder can use 2$\diamondsuit$ to learn more about opener.
+\begin{center}
+\begin{tabular}{ |c|l| }
+ \hline
+ \multicolumn{2}{|c|}{\textit{Opener after 2$\clubsuit$--2$\diamondsuit$}} \\
+ \hline
+ 2$\heartsuit\spadesuit$ & 10--12, 4 cards\\
+ 2NT &  13--14, some 5332 \\
+3$\clubsuit$ & 10--12, 6+ clubs\\
+ 3$\diamondsuit\heartsuit\spadesuit$ & 13--14, 4 cards \\
+ 3NT & 13--14, strong 6+ $\clubsuit$ \\
+ \hline
+\end{tabular}
+\end{center}
+
+If opponents interfere after 2$\clubsuit$ use the same methods as with interference after 1-of-a-suit.
+
+\section{2$\diamondsuit\heartsuit\spadesuit$ opening}
+
+\emph{\textbf{1st/2nd:} 0--8 HCP, 5 or 6 cards \\ \textbf{3rd seat:} 0--14 HCP, 5 or 6 cards \\ \textbf{4th seat:} 12--14 HCP, 6 cards}
+
+\begin{center}
+\begin{tabular}{ |c|l| }
+ \hline
+ \multicolumn{2}{|c|}{\textit{Responses to a weak-two}} \\
+ \hline
+ raise & sign-off\\
+ new suit & 6+ card suit, NF  \\
+2NT & 17+, forcing \\
+ jump shift & sign-off \\
+ 3NT & sign-off \\
+ \hline
+\end{tabular}
+\end{center}
+
+2NT is the strong response:
+\begin{center}
+\begin{tabular}{ |c|l| }
+ \hline
+ \multicolumn{2}{|c|}{\textit{2$\diamondsuit$--2NT}} \\
+ \hline
+3$\clubsuit$ & 0--7, all hands\\
+3$\diamondsuit$ & 8--9, no 4 card major \\
+3$\heartsuit$ & 8--9, 4 hearts \\
+3$\spadesuit$ & 8--9, 4 spades \\
+ 3NT & 44 in the majors \\
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{ |c|l| }
+ \hline
+ \multicolumn{2}{|c|}{\textit{2$\heartsuit$--2NT}} \\
+ \hline
+3$\clubsuit$ & 0--7, all hands\\
+3$\diamondsuit$ & 8--9, weak hearts \\
+3$\heartsuit$ & 8--9, strong hearts \\
+3$\spadesuit$ & 8--9, weak $\heartsuit$, 4 $\spadesuit$ \\
+ 3NT & 8--9, strong $\heartsuit$, 4 $\spadesuit$ \\
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{ |c|l| }
+ \hline
+ \multicolumn{2}{|c|}{\textit{2$\spadesuit$--2NT}} \\
+ \hline
+3$\clubsuit$ & 0--7, all hands\\
+3$\diamondsuit$ & 8--9, weak spades \\
+3$\heartsuit$ & 8--9, weak $\spadesuit$, 4 $\heartsuit$ \\
+3$\spadesuit$ & 8--9, strong spades \\
+ 3NT & 8--9, strong $\spadesuit$, 4 $\heartsuit$ \\
+ \hline
+\end{tabular}
+\end{center}
+
+
+\section{Higher openings}
+
+2NT shows a balanced 21--22 HCP.
+
+3NT shows a 7+ card solid major suit.
+
+Other suit preempts are natural and follow the rule of 2-3-4. Please experiment with your partner.
+
+
+
+\section{Notes and Choices}
+% \itshape
+
+\subsubsection*{Canape}
+ Kaniklöver also works with canape! You'd use canape on any $\diamondsuit\heartsuit/ \diamondsuit\spadesuit/ \heartsuit\spadesuit$ two-suited hand (everything else is still ``open your longest suit''). You can call some 5332 hands two-suited, but be ready to play quite a few 3-3 fits at the 2-level!
+
+
+
+    % \subsubsection*{Run-out system after 1NT (X)}
+    % Everyone who plays a weak NT devises their own run-out system: here's mine!
+
+
+    % \begin{center}
+    % \begin{tabular}{ |c|l| }
+    %  \hline
+    %  \multicolumn{2}{|c|}{\textit{Responses after a penalty double}} \\
+    %  \hline
+    %  pass & Relay to XX \\
+    %  XX & Relay to 2$\clubsuit$ \\
+    %  2$\clubsuit$ & Relay to 2$\diamondsuit$ \\
+    %  2$\diamondsuit\heartsuit$ & Transfers to 2$\heartsuit\spadesuit$ \\
+    %  2NT & Strong and unbalanced\\
+    %  \hline
+    % \end{tabular}
+    % \end{center}
+
+    % % With a strong hand or no fiveWith a one-suited hand, relay/transfer.
+
+
+    % \begin{center}
+    % \begin{tabular}{ |c|l| }
+    %  \hline
+    %  \multicolumn{2}{|c|}{\textit{After 1NT (X) -- -- XX --}} \\
+    %  \hline
+    %  pass & 8+ HCP (penalty XX) \\
+    %  2$\clubsuit$ & (3 or) 4 clubs \\
+    %  2$\diamondsuit$ & 44 in diamonds and hearts \\
+    %  2$\heartsuit$ & 44 in the majors \\
+    %  \hline
+    % \end{tabular}
+    % \end{center}
+
+    % \begin{center}
+    % \begin{tabular}{ |c|l| }
+    %  \hline
+    %  \multicolumn{2}{|c|}{\textit{After 1NT (X) XX -- 2$\clubsuit$ --}} \\
+    %  \hline
+    %  pass & 5+ clubs \\
+    %  2$\diamondsuit$ & 44 in diamonds + spades \\
+    %  2$\heartsuit$ & 44 in the majors \\
+    %  \hline
+    % \end{tabular}
+    % \end{center}
+
+    % \begin{center}
+    % \begin{tabular}{ |c|l| }
+    %  \hline
+    %  \multicolumn{2}{|c|}{\textit{After 1NT (X) 2$\clubsuit$ -- 2$\diamondsuit$ --}} \\
+    %  \hline
+    %  pass & 5+ diamonds \\
+    %  2$\heartsuit$ & 44 in the majors \\
+    %  \hline
+    % \end{tabular}
+    % \end{center}
+
+\subsubsection*{Run-out system after 1NT (X)}
+Here's a system I devised: it emphasises having the 1NT opener declare whenever responder has shape.
+
+\begin{center}
+\begin{tabular}{ |c|l| }
+ \hline
+ \multicolumn{2}{|c|}{\textit{Responses after 1NT (X)}} \\
+ \hline
+ pass & Relay to XX \\
+ XX & Relay to 2$\clubsuit$ \\
+ 2$\clubsuit\diamondsuit\heartsuit$ & Transfers to 2$\diamondsuit\heartsuit\spadesuit$ \\
+ 2NT & Strong, unbalanced\\
+ \hline
+\end{tabular}
+\end{center}
+
+% With a strong hand or no fiveWith a one-suited hand, relay/transfer.
+
+
+\begin{center}
+\begin{tabular}{ |c|l| }
+ \hline
+ \multicolumn{2}{|c|}{\textit{Resp. after 1NT (X) -- -- XX --}} \\
+ \hline
+ pass & Happy with 1NTxx \\
+ 2$\clubsuit$ & 3 or 4 clubs, no 5cM \\
+ 2$\diamondsuit$ & 443+ outside clubs \\
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{ |c|l| }
+ \hline
+ \multicolumn{2}{|c|}{\textit{Resp. after 1NT (X) XX -- 2$\clubsuit$ --}} \\
+ \hline
+ pass & 5+ clubs \\
+ 2$\diamondsuit$ & 44+ in the majors \\
+
+ \hline
+\end{tabular}
+\end{center}
+
+Of course, the double might instead come from balancing seat. Opener must then pass.
+
+\begin{center}
+\begin{tabular}{ |c|l| }
+ \hline
+ \multicolumn{2}{|c|}{\textit{Resps. after 1NT -- -- (X) -- --}} \\
+ \hline
+ pass & Happy with 1NTx \\
+ XX & 5+ card minor \\
+ 2$\clubsuit$ & 3 or 4 clubs \\
+ 2$\diamondsuit$ &  443+ outside clubs \\
+ \hline
+\end{tabular}
+\end{center}
+
+
+\subsubsection*{Sounder opening bids}
+You can make opener's bids all require one point more (or two!) if you want, but then subtract one point from each of responder's replies.
+
+
+\subsection*{Statistics}
+
+\subsubsection*{How many cards does each opening bid show?}
+%\large\sffamily
+\begin{center}
+\begin{tabular}{ |r|ccccc| }
+\hline
+  & 3 & 4 & 5 & 6 & 7+ \\
+ \hline
+& \multicolumn{5}{|c|}{\textit{Kaninklöver 12--14 NT}} \\
+1$\diamondsuit$ & 7 & 16 & 48 & 24 & 6 \\
+1$\heartsuit$ & & 32 & 47 & 17 & 4 \\
+ 1$\spadesuit$ & & 24 & 52 & 19 & 5 \\
+2$\clubsuit$ & & & 60 & 32 & 8 \\
+ \hline
+ & \multicolumn{5}{|c|}{\textit{Kaninklöver 15--17 NT}} \\
+1$\diamondsuit$ & 10 & 25 & 44 & 17 & 5 \\
+1$\heartsuit$ & & 47 & 37 & 13 & 3 \\
+ 1$\spadesuit$ & & 38 & 42 & 16 & 4 \\
+2$\clubsuit$ & & & 66 & 27 & 7 \\
+ \hline
+ & \multicolumn{5}{|c|}{\textit{Standard American}} \\
+1$\clubsuit$ & 12 & 21 & 39 & 22 & 6 \\
+1$\diamondsuit$ & 4 & 37 & 37 & 18 & 4 \\
+1$\heartsuit$ & & & 65 & 28 & 7 \\
+1$\spadesuit$ & & & 66 & 27 & 7  \\
+\hline
+  & 3 & 4 & 5 & 6 & 7+ \\
+ \hline
+\end{tabular}
+\end{center}
+
+% \begin{center}
+% \begin{tabular}{ |cc|cc|cc| }
+%  \hline
+%  1$\clubsuit$   & 12 & 12$\clubsuit$  & gh    & 3x & \\
+% 1$\diamondsuit$ & 10 & 2$\diamondsuit$ & 37   & 3NT &  5 \\
+% 1$\heartsuit$   &   & 2$\heartsuit$ & 3x        & 4x & \\
+% 1$\spadesuit$   &   & 2$\spadesuit$ & 38        &  &  \\
+% \hline
+% \end{tabular}
+% \end{center}
+
+% \begin{figure}
+%     \centering
+%     \includegraphics{Pictures/teste}
+%     \caption{Caption}
+%     \label{fig:my_label}
+% \end{figure}
+
+Probabilities in percentages. For Standard American, I assume you open 1$\diamondsuit$ with equally long minors (except when 33).
+
+\end{multicols}
+
+
+\end{document}
