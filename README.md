@@ -4,9 +4,9 @@
 
 Kaninklöver (Cottontail Club) is a bidding system that has four-card majors, optional canape, a strong club opening, and aggressive weak-two openings. 
 
-Defensively, it uses a direct 1NT overcall to show a four card major and a long minor, can show all three two-suiters. 
+Defensively, it uses a direct 1NT overcall to show a four card major and a long minor, and can show all three two-suiters after an enemy one-of-a-suit opening.
 
-Kaninklöver was developed by Jan Eric Larsson and Anu Uus, his wife. It is descended from Larsson's earlier Tangerine and Cranberry Clubs. Unfortunately, their notes on Kaninklöver are, as of 2021, only available in Swedish.
+Kaninklöver was developed by Jan Eric Larsson and Anu Uus, his wife. It is descended from Larsson's earlier Tangerine and Cranberry Clubs. Unfortunately, their notes on Kaninklöver are only available in Swedish and are very comprehensive (long).
 
 I've revised and summarised Kaninklöver with reference to Tangerine and Cranberry Club as well. 
 
